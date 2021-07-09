@@ -123,3 +123,46 @@ html {
     height: 325px;
   }
 }
+
+/* ABOUT PAGE */
+
+.about-bg {
+  width: 517px;
+  height: 528px;
+}
+.aboutinner {
+  width: 333px;
+  height: 355px;
+  background-color: #EAECEE;
+}
+.mission-bg{
+  width: 496px;
+  height: 553px;
+}
+.vision-bg{
+  width: 518px;
+  height: 490px;
+  background-color: #EAECEE;
+}
+@media screen and (max-width: 1320px) {
+  .about-bg {
+    width: 90%;
+    max-width: 460px;
+    height: 480px;
+  }
+  .mission-bg{
+    width: 100%;
+    max-width: 406px;
+    height: 483px;
+  }
+  .vision-bg{
+    width: 100%;
+    max-width: 450px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-bg {
+    height: 320px;
+  }
+}
