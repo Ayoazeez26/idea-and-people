@@ -12,9 +12,6 @@ smMenuBtn.forEach(eventName => {
 const blogDesc = document.querySelector('.blog-desc');
 if (blogDesc) {
   const business = document.querySelector('#business');
-  const fleer = document.querySelector('.fleer');
-  const driver = document.querySelector('.driver');
-  const indiv = document.querySelector('.indiv');
   const bus = business.getBoundingClientRect();
   const busHeight = bus.height;
   blogDesc.style.height = `${busHeight}px`;
