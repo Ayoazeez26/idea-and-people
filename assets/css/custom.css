@@ -39,7 +39,7 @@ html {
   width: 5%;
   height: 11px;
   background-color: #243141;
-  animation: stretch 300ms ease-in-out forwards;
+  animation: stretch 150ms ease-in-out forwards;
 }
 @keyframes stretch {
   100% {
