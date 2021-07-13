@@ -83,6 +83,10 @@ const changeBlogDesc = (id) => {
 const questions = document.querySelector('.questions');
 if (questions) {
   questions.addEventListener('click', (e) => {
+    if (e.target.classList.contains('cursor-pointer')) {
+      e.target.parentElement.parentElement.children[1].classList.toggle('none');
+      e.target.parentElement.children[1].children[1].classList.toggle('none');
+    }
     if (e.target.classList.contains('plus')) {
       e.target.classList.add('none');
       e.target.parentElement.parentElement.parentElement.children[1].classList.toggle('none');
