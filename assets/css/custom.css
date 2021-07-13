@@ -134,10 +134,15 @@ html {
     border-radius: 16px;
   }
   .blog-active::after {
-    left: -5%;
-    right: 0;
-    width: 110%;
+    left: 50%;
+    width: 2%;
     height: 6px;
+  }
+  @keyframes stretch {
+    100% {
+      left: -5%;
+      width: 110%;
+    }
   }
   .num-line::after {
     height: 325px;
