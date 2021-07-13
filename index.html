@@ -143,14 +143,14 @@
       <p class="font-semibold text-bm-text text-center text-xl md:text-2xl leading-tight mt-6 mx-auto w-full md:w-1/2 px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
 
       <div class="blogs bg-bm-bg pt-8 md:pt-12 pb-5 md:px-16 mt-16 md:mt-32 mb-16">
-        <ul class="blog-tabs text-left flex items-center justify-between md:justify-around cursor-pointer border-b border-b-gray-400 pb-3 font-semibold text-bm-text text-sm md:text-2xl">
-          <li><a id="business" class="blog-active pb-3 md:px-5 mr-1 md:mr-2" href="#">For Businesses</a></li>
-          <li><a id="fleer" class=" pb-3 md:px-5 md:mx-2" href="#">For Fleer Owners</a></li>
-          <li><a id="driver" class=" pb-3 md:px-5 md:mx-2" href="#">For Drivers</a></li>
-          <li><a id="indiv" class=" pb-3 md:px-5 md:mx-2" href="#">For Individuals</a></li>
+        <ul class="blog-tabs text-left flex items-center justify-between md:justify-around cursor-pointer border-b border-b-gray-400 pb-3 mb-10 font-semibold text-bm-text text-sm md:text-2xl">
+          <li><a data-nav="business" href="#business" class="business blog-active pb-3 md:px-5 mr-1 md:mr-2">For Businesses</a></li>
+          <li><a data-nav="fleer" href="#fleer" class="fleer pb-3 md:px-5 md:mx-2">For Fleer Owners</a></li>
+          <li><a data-nav="driver" href="#driver" class="driver pb-3 md:px-5 md:mx-2">For Drivers</a></li>
+          <li><a data-nav="indiv" href="#indiv" class="indiv pb-3 md:px-5 md:mx-2">For Individuals</a></li>
         </ul>
-        <div class="blog-desc w-11/12 mx-auto md:w-full mt-20 md:mt-48">
-          <div class="business flex flex-col justify-between">
+        <div class="blog-desc w-11/12 mx-auto md:w-full">
+          <div id="business" class="business flex flex-col justify-between pt-20 md:pt-40">
             <div class="flex flex-col md:flex-row justify-start">
               <div class="flex flex-col md:w-5/12">
                 <div class="blog-pfp"></div>
@@ -183,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="fleer hidden flex-col justify-between">
+          <div id="fleer" class="fleer flex-col justify-between pt-20 md:pt-40">
             <div class="flex flex-col md:flex-row justify-start">
               <div class="flex flex-col md:w-5/12">
                 <div class="blog-pfp"></div>
@@ -216,7 +216,7 @@
               </div>
             </div>
           </div>
-          <div class="driver hidden flex-col justify-between">
+          <div id="driver" class="driver flex-col justify-between pt-20 md:pt-40">
             <div class="flex flex-col md:flex-row justify-start">
               <div class="flex flex-col md:w-5/12">
                 <div class="blog-pfp"></div>
@@ -249,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="indiv hidden flex-col justify-between">
+          <div id="indiv" class="indiv flex-col justify-between pt-20 md:pt-40">
             <div class="flex flex-col md:flex-row justify-start">
               <div class="flex flex-col md:w-5/12">
                 <div class="blog-pfp"></div>

@@ -9,13 +9,54 @@ smMenuBtn.forEach(eventName => {
   
 })
 
+const blogDesc = document.querySelector('.blog-desc');
+if (blogDesc) {
+  const business = document.querySelector('#business');
+  const fleer = document.querySelector('.fleer');
+  const driver = document.querySelector('.driver');
+  const indiv = document.querySelector('.indiv');
+  const bus = business.getBoundingClientRect();
+  const busHeight = bus.height;
+  blogDesc.style.height = `${busHeight}px`;
+  blogDesc.addEventListener('scroll', () => {
+    const blogPos = blogDesc.getBoundingClientRect();
+    const topPos = blogPos.top;
+    const blogAll = blogDesc.children;
+    // console.log(blogPos.top);
+    Array.prototype.forEach.call(blogAll, function(child) {
+      const childPos = child.getBoundingClientRect();
+      const blogTabs = document.querySelector('.blog-tabs').children;
+      if (childPos.top <= topPos && childPos.bottom >= topPos) {
+        Array.prototype.forEach.call(blogTabs, function(tabChild) {
+          const tab = tabChild.children[0];
+          if (tab.classList.contains(child.id)) {
+            if (tab.classList.contains('blog-active')) {
+              false;
+            } else {
+              Array.prototype.forEach.call(blogTabs, function(tab) {
+                if (tab.children[0].classList.contains('blog-active')) {
+                  tab.children[0].classList.remove('blog-active');
+                } else {
+                  false;
+                }
+              });
+              tab.classList.add('blog-active');
+            }
+          }
+        });
+      }
+    });
+  })
+
+}
 
 //? SLIDER
 const blogTabs = document.querySelector('.blog-tabs');
 if (blogTabs) {
   blogTabs.addEventListener('click', (e) => {
     e.preventDefault();
-    const id = e.target.id;
+    const id = e.target.dataset.nav;
+    console.log(id);
     changeBlogActive(e);
     changeBlogDesc(id);
   })
@@ -38,19 +79,7 @@ const changeBlogActive = (e) => {
 }
 
 const changeBlogDesc = (id) => {
-  const desc = document.querySelector('.blog-desc').children;
-  Array.prototype.forEach.call(desc, function(tab) {
-    if (tab.classList.contains('flex')) {
-      tab.classList.replace('flex', 'hidden');
-    } else {
-      false;
-    }
-    if (tab.classList.contains(id)) {
-      tab.classList.replace('hidden', 'flex');
-    } else {
-      false;
-    }
-  });
+  document.querySelector(`#${id}`).scrollIntoView();
 }
 
 //? FAQ SECTION
