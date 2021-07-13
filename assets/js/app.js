@@ -17,7 +17,7 @@ if (blogDesc) {
   blogDesc.style.height = `${busHeight}px`;
   blogDesc.addEventListener('scroll', () => {
     const blogPos = blogDesc.getBoundingClientRect();
-    const topPos = blogPos.top;
+    const topPos = blogPos.top + 50;
     const blogAll = blogDesc.children;
     // console.log(blogPos.top);
     Array.prototype.forEach.call(blogAll, function(child) {
