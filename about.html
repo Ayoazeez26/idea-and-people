@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/tailwind.css">
   <link rel="stylesheet" href="./assets/css/custom.css">
   <title>Bowmenn</title>
@@ -14,22 +14,22 @@
 <body>
   <header class="sticky bg-opacity-90 bg-bm-bg flex items-center top-0 left-0 z-50 h-16 text-bm-text text-lg lg:h-24 w-full">
     <div class="flex items-center justify-between w-11/12 md:w-5/6 mx-auto">
-      <a href="index.html" class="text-bm-logo font-bold text-xl md:text-2xl uppercase">bowmenn.</a>
-      <ul class="nav-tabs nav-text font-semibold hidden md:flex items-center justify-between">
+      <a href="index.html"><img src="./assets/img/Bowmenn_Logo.png" alt="Bowmenn Logo"></a>
+      <ul class="nav-tabs nav-text font-semibold hidden lg:flex items-center text-xl justify-between">
         <a href="index.html#why" class="mr-10">Why Bowmenn</a>
         <a href="index.html#what" class="mr-10">For Businesses</a>
         <a href="index.html#faq" class="mr-10">FAQ</a>
-        <a href="#" class="text-bm-head font-bold mr-10">About</a>
+        <a href="about.html" class="text-bm-head mr-10">About</a>
         <a href="contact.html" class="">Contact</a>
       </ul>
       <div class="nav-links items-center justify-between flex">
-        <a href="#" class="font-bold hidden md:block text-bm-hero text-xl">Download App</a>
-        <div class="hamburger md:hidden sm-menu-btn relative z-50 justify-self-end ml-20 flex flex-col">
-          <span class="ham-up inline-flex w-5 h-1 bg-bm-hero"></span>
-          <span class="ham-down inline-flex w-5 h-1 bg-bm-hero mt-1"></span> 
+        <a href="#" class="font-black hidden lg:block text-bm-hero text-xl">Download App</a>
+        <div class="hamburger lg:hidden sm-menu-btn relative z-50 justify-self-end ml-20 flex flex-col">
+          <span class="ham-up inline-flex w-5 h-1 bg-bm-btn"></span>
+          <span class="ham-down inline-flex w-5 h-1 bg-bm-btn mt-1"></span> 
         </div> 
       </div> 
-      <div class="sm-screen-menu fixed top-0 left-0 h-screen w-screen lg:w-full bg-bm-hero hidden">
+      <div class="sm-screen-menu fixed top-0 left-0 h-screen w-screen lg:w-full bg-bm-btn hidden">
         <div class="flex h-full relative w-10/12 mx-auto">
           <div class="hamburger absolute top-5 right-0 sm-menu-btn z-50 justify-self-end ml-20 flex flex-col">
             <div class="relative">
@@ -39,9 +39,9 @@
           </div> 
           <div class="text-white pt-20 flex justify-center md:justify-end font-semibold p-5 mt-10 w-full">
             <div class="flex flex-col w-full">
-              <a href="#why" class="text-3xl mb-3 p-2">Why Bowmenn</a> 
-              <a href="#what" class="text-3xl mb-3 p-2">For Businesses</a>
-              <a href="#faq" class="text-3xl mb-3 p-2">FAQ</a>
+              <a href="index.html#why" class="text-3xl mb-3 p-2">Why Bowmenn</a> 
+              <a href="index.html#what" class="text-3xl mb-3 p-2">For Businesses</a>
+              <a href="index.html#faq" class="text-3xl mb-3 p-2">FAQ</a>
               <a href="about.html" class="text-3xl mb-3 p-2">About</a>
               <a href="contact.html" class="text-pr-sec text-3xl mb-3 p-2">Contact</a>
             </div>
@@ -54,17 +54,17 @@
   </header>
   <section class="bg-white w-full flex flex-col items-center pt-10 pb-12 md:pb-0 md:pt-20">
     <div class="flex flex-col w-full md:w-7/12 mx-auto">
-      <p class="text-lg uppercase text-center text-bm-logo font-semibold">bowmenn</p>
-      <h1 class="font-bold text-bm-hero text-center text-4xl md:text-5xl leading-tight big:text-6xl big:leading-tight">Whereverer The destination, There’s No Stopping For Us.</h1>
+      <p class="text-lg uppercase text-center text-bm-yel font-semibold">bowmenn</p>
+      <h1 class="font-extrabold text-bm-hero text-center text-3xl md:text-4xl lg:text-5xl leading-tight big:text-6xl big:leading-tight">Whereverer The destination, There’s No Stopping For Us.</h1>
       <p class="font-semibold text-bm-text text-center text-xl md:text-2xl leading-tight mt-6 mx-auto w-full md:w-3/4 px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
       <img class="mt-10" src="./assets/img/World_Map.svg" alt="world map">
     </div>
     <div class="flex flex-col md:flex-row items-center md:items-start w-full md:w-5/6 mt-10 mx-auto">
       <div class="why flex flex-col text-left px-4 md:px-0 md:w-2/3">
-        <p class="font-semibold text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> is a tech-enabled last-mile logistics platform that connects truck owners with businesses and individuals to provide on-demand delivery of goods and household equipment conveniently from the shortest distance to the last - mile.</p>
-        <p class="font-semibold text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10">On our on-demand platform, you are never short of options( Trucks, Pickups, and Vans) for your moving and hauling needs.</p>
-        <p class="font-semibold text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> places in your hands, the power to manage your delivery business and save time and money. You choose what’s best for your present needs-whether you are a manufacturer, agro-entrepreneur, or industrialist, <span class="text-bm-head font-bold">Bowmenn</span> provides you the means to connect to your customers and distributors across Nigeria and beyond faster, cheaper, and with Insurance.</p>
-        <p class="font-semibold text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> is currently accessible across Nigeria and growing fast. Our proprietary technology includes mobile and web apps used for seamless delivery and moving experiences.</p>
+        <p class="font-normal text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> is a tech-enabled last-mile logistics platform that connects truck owners with businesses and individuals to provide on-demand delivery of goods and household equipment conveniently from the shortest distance to the last - mile.</p>
+        <p class="font-normal text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10">On our on-demand platform, you are never short of options( Trucks, Pickups, and Vans) for your moving and hauling needs.</p>
+        <p class="font-normal text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> places in your hands, the power to manage your delivery business and save time and money. You choose what’s best for your present needs-whether you are a manufacturer, agro-entrepreneur, or industrialist, <span class="text-bm-head font-bold">Bowmenn</span> provides you the means to connect to your customers and distributors across Nigeria and beyond faster, cheaper, and with Insurance.</p>
+        <p class="font-normal text-bm-text text-2xl leading-tight my-6 md:w-5/6 big:pr-10"><span class="text-bm-head font-bold">Bowmenn</span> is currently accessible across Nigeria and growing fast. Our proprietary technology includes mobile and web apps used for seamless delivery and moving experiences.</p>
       </div>
       <div class="about-bg bg-bm-bg relative mt-14 rounded-4xl">
         <div class="aboutinner absolute -bottom-48 left-0 md:-left-24 rounded-3xl"></div>
@@ -73,11 +73,11 @@
     <div class="flex flex-col justify-between items-start mt-48 px-4 md:px-0 w-full md:w-7/12">
       <div class="mission flex flex-col md:flex-row w-full justify-between mt-20 md:mt-0 mb-20">
         <h2 class="text-bm-head font-bold text-2xl big:text-3xl mb-3 w-1/6">Mission</h2>
-        <p class="font-semibold text-bm-text text-xl lg:text-2xl leading-tight md:w-2/3">Our mission is to organize the world trucking & hauling system of all categories. To break the chain of middlemen, to bring the hauling industry and, shippers together using technology and make them more accessible and useful</p>
+        <p class="font-normal text-bm-text text-xl lg:text-2xl leading-tight md:w-2/3">Our mission is to organize the world trucking & hauling system of all categories. To break the chain of middlemen, to bring the hauling industry and, shippers together using technology and make them more accessible and useful</p>
       </div>
       <div class="vision flex flex-col md:flex-row w-full justify-between mb-20">
         <h2 class="text-bm-head font-bold text-2xl big:text-3xl mb-3 w-1/6">Vision</h2>
-        <p class="font-semibold text-bm-text text-xl lg:text-2xl leading-tight md:w-2/3">Our Vision is to create and organize a technology-based trucking system for all market categories.</p>
+        <p class="font-normal text-bm-text text-xl lg:text-2xl leading-tight md:w-2/3">Our Vision is to create and organize a technology-based trucking system for all market categories.</p>
       </div>
     </div>
     <div class="about-bg-group flex justify-end items-start w-full px-4 md:px-0 md:w-2/3">
@@ -91,46 +91,46 @@
     <h2 class="font-bold text-bm-head mt-20 text-4xl text-center big:leading-tight big:text-5xl">Get Bowmenn Now</h2>
     <p class="font-semibold text-bm-text text-center text-xl md:text-2xl leading-tight mt-6 mx-auto w-full md:w-2/5 px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
     <div class="download flex items-center justify-center mt-8 text-white">
-      <button class="bg-bm-btn flex text-left items-center justify-between px-5 md:px-8 py-4 md:py-5 mr-2">
-        <img src="./assets/img/logo-apple.svg" alt="Apple logo">
-        <div class="location ml-4 flex flex-col">
-          <p class="uppercase font-normal text-opacity-75 text-xs">Download on the</p>
-          <p class="font-bold leading-none text-base">App Store</p>
-        </div>
-      </button>
-      <button class="bg-bm-btn flex text-left items-center justify-between px-5 md:px-8 py-4 md:py-5 ml-1 md:ml-2">
+      <button class="bg-bm-btn flex text-left items-center justify-between px-3 md:px-8 lg:px-12 py-4 md:py-5 mr-2">
         <img src="./assets/img/g58.svg" alt="Apple logo">
         <div class="location ml-4 flex flex-col">
-          <p class="uppercase font-normal text-opacity-75 text-xs">get it on</p>
-          <p class="font-bold leading-none text-base">Google Play</p>
+          <p class="uppercase font-semibold text-xs mb-1">get it on</p>
+          <p class="font-bold  text-bm-yellow leading-none text-base">Google Play</p>
+        </div>
+      </button>
+      <button class="bg-bm-btn flex text-left items-center justify-between px-3 md:px-8 lg:px-12 py-4 md:py-5 ml-1 md:ml-2">
+        <img src="./assets/img/logo-apple.svg" alt="Apple logo">
+        <div class="location ml-4 flex flex-col">
+          <p class="uppercase font-semibold mb-1 text-xs">Download on the</p>
+          <p class="font-bold text-bm-yellow leading-none text-base">App Store</p>
         </div>
       </button>
     </div>
   </section>
-  
-  <footer class="pt-6 lg:pt-12 text-bm-text bg-bm-bg">  
+
+  <footer class="pt-6 bg-bm-bg lg:pt-24 text-bm-textbg-bm-bg">  
     <div class="w-full md:w-5/6 mx-auto pb-12 sm:pb-16 lg:pb-10">
      <div class="flex flex-col mt-6 md:mt-0 lg:w-full lg:mx-auto">
       <div class="footer-top flex flex-col w-full sm:flex-row sm:justify-between sm:flex-wrap">
         <div class="px-4 md:px-0 sm:w-1/2 lg:w-2/5">
-          <p class="text-bm-logo font-bold text-4xl uppercase">bowmenn.</p>
+          <img src="./assets/img/Bowmenn_Logo.png" alt="Bowmenn Logo">
           <p class="font-semibold text-bm-text text-xl leading-tight mt-7 w-3/4 big:pr-12">Bowmenn Makes businesses move faster for shippers, drivers, and truck owners.</p>
         </div>
-        <div class="px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
           <h5 class="text-bm-head font-bold text-3xl">App</h5>  
           <ul class="pt-5 text-xl lg:text-2xl"> 
             <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">Why Bowmenn</a></li>  
             <li> <a href="#" class="mb-2 font-semibold text-bm-head text-xl">Download Now</a></li>
           </ul>
         </div> 
-        <div class="px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
           <h5 class="text-bm-head font-bold text-3xl">Company</h5> 
           <ul class="pt-5 text-xl lg:text-2xl"> 
             <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">About</a></li> 
             <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">For Who?</a></li> 
             </ul>
         </div>
-        <div class="px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
           <h5 class="text-bm-head font-bold text-3xl">Support</h5> 
           <ul class="pt-5 text-xl lg:text-2xl"> 
             <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">FAQ</a></li> 
@@ -138,10 +138,10 @@
             </ul>
         </div>
       </div>
-      <div class="footer-mid mt-10 px-4 md:px-0 flex flex-col w-full sm:flex-row sm:justify-between sm:flex-wrap">
-        <p class="text-xl text-bm-head font-semibold">&copy;2021 Bowmenn</p>
-        <p class="text-xl text-bm-text mt-3 md:mt-3 font-semibold">Support.24/7@bowmenn.com</p>
-        <div class="socials flex mt-4 md:mt-0 items-center">
+      <div class="footer-mid mt-10 px-4 md:px-0 flex flex-col text-bm-btn w-full lg:flex-row lg:justify-between lg:flex-wrap">
+        <p class="text-xl font-semibold">&copy;2021 Bowmenn</p>
+        <p class="text-xl mt-3 md:mt-3 font-semibold">Support.24/7@bowmenn.com</p>
+        <div class="socials flex mt-4 lg:mt-0 items-center">
           <a class="mr-4" href="#"><img src="./assets/img/svgexport-10.svg" alt="Instagram Social"></a>
           <a class="mr-4" href="#"><img src="./assets/img/svgexport-11.svg" alt="Facebook Social"></a>
           <a class="mr-32" href="#"><img src="./assets/img/twitter-alt.svg" alt="Twitter Social"></a>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 * {
   margin: 0;
@@ -26,8 +26,9 @@ html {
   background-color: #EAECEE;
   margin-right: 10px;
 }
+
 .blog-active {
-  color: #0D1826;
+  color: #1c6288;
   font-weight: bold;
   position: relative;
 }
@@ -38,7 +39,7 @@ html {
   left: 50%;
   width: 5%;
   height: 11px;
-  background-color: #243141;
+  background-color: #ffbe57;
   animation: stretch 150ms ease-in-out forwards;
 }
 @keyframes stretch {
@@ -68,8 +69,6 @@ html {
   width: 111px;
   height: 111px;
   border-radius: 14px;
-  background-color: #0D1826;
-  opacity: 0.12;
 }
 .num {
   width: 54px;
@@ -87,9 +86,6 @@ html {
 }
 .card {
   width: 362px;
-}
-.card-pfp {
-  background-color: #B5B7B9;
 }
 .why-bg {
   width: 517px;
@@ -146,6 +142,9 @@ html {
   }
   .num-line::after {
     height: 325px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
