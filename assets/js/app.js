@@ -60,7 +60,7 @@ if (blogDesc) {
       const dataNav = e.target.dataset.nav;
       // finalTargetElem.top = tabPosBot + 30;
       const targetElemHeight = finalTargetElem.height;
-      console.log(finalTargetElem.top);
+      // console.log(finalTargetElem.top);
       gsap.registerPlugin(ScrollToPlugin);
       const blogDesc = document.querySelector('.blog-desc');
       gsap.to(blogDesc, {duration: 0.5, scrollTo: () => `${targetElemHeight * dataNav - targetElemHeight}`});
