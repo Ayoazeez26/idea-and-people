@@ -79,17 +79,13 @@ html {
   content: "";
   top: 54px;
   width: 1px;
-  height: 269px;
+  height: 628px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #999999;
 }
 .card {
   width: 362px;
-}
-.why-bg {
-  width: 517px;
-  height: 548px;
 }
 .connect {
   height: 372px;
@@ -119,11 +115,6 @@ html {
   .card {
     width: 310px;
   }
-  .why-bg {
-    width: 100%;
-    max-width: 480px;
-    height: 500px;
-  }
 }
 @media screen and (max-width: 768px) {
   .blogs {
@@ -141,7 +132,7 @@ html {
     }
   }
   .num-line::after {
-    height: 325px;
+    height: 650px;
   }
   .card {
     width: 100%;
@@ -188,6 +179,9 @@ html {
 @media screen and (max-width: 768px) {
   .about-bg {
     height: 320px;
+  }
+  .aboutinner {
+    width: 100%;
   }
 }
 /* CONTACT PAGE */
