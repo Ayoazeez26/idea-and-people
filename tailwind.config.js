@@ -12,7 +12,11 @@ module.exports = {
           btn: "#1c6288",
           head: "#0D1826",
           yellow: "#F6BF69",
-          yel: "#ffbe57"
+          yel: "#ffbe57",
+          pri: "#E68D00",
+          bus: "#F7CA17",
+          fleet: "#71A1FA",
+          dri: "#6AD011"
         },
       },
       screens: {
