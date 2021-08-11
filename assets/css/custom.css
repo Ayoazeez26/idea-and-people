@@ -1,5 +1,6 @@
 body {
   font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
 }
 * {
   margin: 0;
@@ -16,12 +17,17 @@ html {
   box-shadow: -40px 43px 86px #26314021;
   border-radius: 10px;
 }
+.truck-bg {
+  background-image: url(../../assets/img/truck.png);
+  background-repeat: no-repeat;
+  background-position: 120% 64px;
+}
 .phone-card {
   box-shadow: -40px 43px 86px #26314021;
   border: 1px solid #EAECEE;
   border-radius: 20px;
   width: 296px;
-  height: 117px;
+  /* height: 117px; */
 }
 .desc-pfp {
   width: 38px;
@@ -31,7 +37,7 @@ html {
   margin-right: 10px;
 }
 .who-sec {
-  width: 45%;
+  width: 47%;
 }
 .blog-active {
   color: #1c6288;
@@ -123,6 +129,13 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+  .truck-bg {
+    background-position: center 100%;
+    background-size: contain;
+  }
+  .who-sec {
+    width: 100%;
+  }
   .blogs {
     border-radius: 16px;
   }
