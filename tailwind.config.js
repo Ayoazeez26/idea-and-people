@@ -16,7 +16,9 @@ module.exports = {
           pri: "#E68D00",
           bus: "#F7CA17",
           fleet: "#71A1FA",
-          dri: "#6AD011"
+          dri: "#6AD011",
+          vet: "#F8FAFA",
+          vbtn: "#DB9033"
         },
       },
       screens: {
@@ -25,6 +27,7 @@ module.exports = {
       borderRadius: {
         '4xl': '20px',
         '5xl': '30px',
+        'cus': '10px'
       }
     },
   },

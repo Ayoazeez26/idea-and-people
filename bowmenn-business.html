@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollToPlugin.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/tailwind.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <title>Bowmenn</title>
+</head>
+<body class="bg-bm-bg"> 
+  <header class="sticky bg-opacity-90 bg-white flex items-center top-0 left-0 z-50 h-16 text-bm-text text-lg lg:h-28 w-full">
+    <div class="flex items-center justify-between w-11/12 big:w-5/6 mx-auto">
+      <a href="index.html"><img src="./assets/img/Bowmenn_Logo.png" alt="Bowmenn Logo"></a>
+      <ul class="nav-tabs nav-text font-semibold hidden lg:flex items-center justify-between">
+        <li><a href="#why" class="mr-10">Why Bowmenn</a></li>
+        
+        <li class=" border-transparent mr-10 relative list-none">
+          <a href="#" class="who-dropdown flex items-center">
+            <span class="mr-2">For You</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.94" viewBox="0 0 15.21 9.295">
+              <path id="Path_26" data-name="Path 26"
+                d="M13.241,14.137l5.915-5.915,1.69,1.69-7.6,7.605-7.6-7.605,1.69-1.69Z"
+                transform="translate(-5.636 -8.222)" fill="#343434" />
+            </svg>
+          </a>
+          <ul
+            class="dropdown-menu absolute text-bm-text bottom-0 top-8 w-48 h-44 border flex-col z-60 bg-white hidden">
+            <a href="#"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Businesses</a>
+            <a href="#"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Fleet Owners</a>
+            <a href="#"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Drivers</a>
+            <a href="#"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2">For Individual</a>
+          </ul>
+        </li>
+        <a href="#faq" class="mr-10">FAQ</a>
+        <a href="about.html" class="mr-10">About</a>
+        <a href="contact.html" class="">Contact</a>
+      </ul>
+      <div class="nav-links items-center justify-between flex">
+        <a href="#" class="font-bold hidden mr-9 lg:block text-bm-hero text-xl">Sign In</a>
+        <a href="#" class="createAcc font-bold bg-white px-4 py-3 rounded-xl hidden lg:block text-bm-pri text-xl">Create Account</a>
+        <div class="hamburger lg:hidden sm-menu-btn relative z-50 justify-self-end ml-20 flex flex-col">
+          <span class="ham-up inline-flex w-5 h-1 bg-bm-btn"></span>
+          <span class="ham-down inline-flex w-5 h-1 bg-bm-btn mt-1"></span> 
+        </div> 
+      </div> 
+      <div class="sm-screen-menu fixed top-0 left-0 h-screen w-screen lg:w-full bg-bm-btn hidden">
+        <div class="flex h-full relative w-10/12 mx-auto">
+          <div class="hamburger absolute top-5 right-0 sm-menu-btn z-50 justify-self-end ml-20 flex flex-col">
+            <div class="relative">
+              <span class="ham-up transform rotate-45 inline-flex w-8 h-px bg-white"></span>
+              <span class="ham-down absolute mt-1.5 top-3 left-0 transform -rotate-45 inline-flex w-8 h-px bg-white"></span>
+            </div> 
+          </div> 
+          <div class="text-white pt-20 flex justify-center md:justify-end font-semibold p-5 mt-10 w-full">
+            <div class="flex flex-col w-full">
+              <a href="#why" class="text-2xl md:text-3xl mb-3 p-2">Why Bowmenn</a> 
+              <a href="#what" class="text-2xl md:text-3xl mb-3 p-2">For Businesses</a>
+              <a href="#faq" class="text-2xl md:text-3xl mb-3 p-2">FAQ</a>
+              <a href="about.html" class="text-2xl md:text-3xl mb-3 p-2">About</a>
+              <a href="contact.html" class="text-pr-sec text-2xl md:text-3xl mb-3 p-2">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    
+    </div>
+
+  </header>
+  <section class="business-bg w-full flex items-center relative py-12 lg:pt-28 lg:pb-32">
+    <div class="w-11/12 big:w-5/6 mx-auto">
+      <div class="flex flex-col z-10 relative text-left lg:w-7/12 big:w-3/4">
+        <p class="text-bm-yel text-xl mb-3 lg:text-2xl font-bold">For Businesses</p>
+        <h1 class="font-bold text-white text-3xl sm:px-0 md:text-4xl lg:text-4xl lg:leading-tight md:w-3/4 big:w-7/12">The Bowmenn is designed to easily connect your business to vetted delivery professionals.</h1>
+        <p class="text-bm-vet text-lg leading-normal md:text-xl sm:leading-tight mt-7 w-full md:w-3/4 big:w-7/12">Our vetted fleets include Pickup Trucks, Cargo Vans, Cargo Trucks, Flatbeds, LowBeds, Tippers,</p>
+        <button class="bg-bm-vbtn mt-7 text-white text-xl font-bold rounded-cus mb-3 max-w-max sm:mb-0 px-4 py-3">
+          Create Account
+        </button>
+      </div>
+    </div>
+    <div class="cus-dis bg-white absolute -bottom-20 right-0 flex rounded-l-4xl w-1/2">
+      <div class="left h-full rounded-l-cus bg-white w-1/5"></div>
+      <div class="right h-full bg-bm-vet w-4/5"></div>
+    </div>
+  </section>
+  <section id="why" class="w-full flex flex-col items-center py-20">
+    <div class="flex flex-col w-full md:w-5/6">
+      <div class="why flex flex-col text-left px-4 md:px-0 w-full">
+        <!-- <p class="text-bm-yel text-lg font-extrabold">Why use our Bowmenn</p> -->
+        <h2 class="font-bold text-bm-head text-3xl md:text-4xl w-full lg:mt-20 md:leading-tight big:leading-normal big:text-5xl mt-3 ">Why Bowmenn For Business</h2>
+      </div>
+      <div class="why-cards px-4 md:px-0 mt-20 flex flex-wrap justify-between">
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+        <div class="card bg-white flex flex-col md:mb-12 md:px-10 rounded-4xl">
+          <div class="flex items-center justify-center w-12 h-12 mt-10 rounded-xl"><img src="./assets/img/lightbulb_yel.svg" alt="yellow lightbulb"></div>
+          <h3 class="text-bm-head font-bold mt-8 text-xl lg:text-2xl">Supply Chain Optimization</h3>
+          <p class=" mt-6 md:mb-8 text-lg md:text-xl text-bm-text">Increase your business capacity and optimize supply chain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="what" class="w-full flex flex-col items-center py-20 md:py-40">
+    <div class="flex flex-col items-center lg:mt-20 w-full lg:w-5/6">
+      <h2 class="font-bold text-bm-head text-3xl md:text-4xl sm:text-center w-full md:w-7/12 lg:w-5/12 big:w-1/2 big:leading-tight px-4 md:px-0 big:text-5xl">Achieve Delivery Success Every Time on Time</h2>
+      <p class="what-text font-semibold text-bm-text sm:text-center text-lg leading-normal md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-3/4 lg:w-7/12 px-4 big:px-10">We connect you with vetted delivery professionals to help with last-mile delivery, logistics and moving</p>
+      <div class="flex flex-wrap mt-10 justify-between mx-auto w-11/12 lg:w-3/4">
+        <div class="business who-sec flex flex-col justify-between items-start">
+          <div class="bus-img relative">
+            <div class="absolute -left-4 -bottom-2 w-full h-full rounded-3xl bg-bm-bus bg-opacity-10"></div>
+            <img class="rounded-2xl relative mb-2 z-10" src="./assets/img/chef-in-bakery.png" alt="A male chef in a bakery">
+          </div>
+          <h2 class="font-bold mb-4 mt-5 text-2xl text-bm-head">For Businesses</h2>
+          <p class=" text-lg md:text-xl text-bm-text mb-6 lg:w-5/6">We are growing very fast, get 24/7 access to qualified carriers to help you avoid delays.</p>
+          <a class="font-bold border-b border-bm-pri text-bm-pri text-xl" href="for_business.html">Learn More</a>
+        </div>
+        <div class="fleet who-sec mt-20 md:mt-0 flex flex-col justify-between items-start">
+          <div class="bus-img relative">
+            <div class="absolute -left-4 -bottom-2 w-full h-full rounded-3xl bg-bm-fleet bg-opacity-10"></div>
+            <img class="rounded-2xl relative mb-2 z-10" src="./assets/img/trucks-picture-.png" alt="Picture of trucks">
+          </div>
+          <h2 class="font-bold mb-4 mt-5 text-2xl text-bm-head">For Fleet Owners</h2>
+          <p class=" text-lg md:text-xl text-bm-text mb-6 lg:w-5/6">We are growing very fast, get 24/7 access to qualified carriers to help you avoid delays.</p>
+          <a class="font-bold border-b border-bm-pri text-bm-pri text-xl" href="for_fleet.html">Learn More</a>
+        </div>
+        <div class="driver who-sec flex mt-20 flex-col justify-between items-start">
+          <div class="bus-img relative">
+            <div class="absolute -left-4 -bottom-2 w-full h-full rounded-3xl bg-bm-dri bg-opacity-10"></div>
+            <img class="rounded-2xl relative mb-2 z-10" src="./assets/img/afro-man-driving-a-car-.png" alt="A smiling driver">
+          </div>
+          <h2 class="font-bold mb-4 mt-5 text-2xl text-bm-head">For Drivers</h2>
+          <p class=" text-lg md:text-xl text-bm-text mb-6 lg:w-5/6">We are growing very fast, get 24/7 access to qualified carriers to help you avoid delays.</p>
+          <a class="font-bold border-b border-bm-pri text-bm-pri text-xl" href="for_business.html">Learn More</a>
+        </div>
+        <div class="indiv who-sec flex mt-20 flex-col justify-between items-start">
+          <div class="bus-img relative">
+            <div class="absolute -left-4 -bottom-2 w-full h-full rounded-3xl bg-bm-pri bg-opacity-10"></div>
+            <img class="rounded-2xl relative mb-2 z-10" src="./assets/img/black-man-smiling.png" alt="Black Man Smiling">
+          </div>
+          <h2 class="font-bold mb-4 mt-5 text-2xl text-bm-head">For Individual</h2>
+          <p class=" text-lg md:text-xl text-bm-text mb-6 lg:w-5/6">We are growing very fast, get 24/7 access to qualified carriers to help you avoid delays.</p>
+          <a class="font-bold border-b border-bm-pri text-bm-pri text-xl" href="for_fleet.html">Learn More</a>
+        </div>
+      </div>
+      <div class="blogs bg-bm-yel bg-opacity-5 pt-8 md:pt-8 lg:pt-12 pb-5 md:px-8 lg:px-16 mt-16 md:mt-32 mb-16">
+        <ul class="blog-tabs bg-bm-yel bg-opacity-0 sticky top-5 text-left flex items-center justify-between md:justify-around cursor-pointer border-b border-b-gray-400 pb-3 mb-10 font-semibold text-bm-text text-sm md:text-xl lg:text-2xl">
+          <li><a data-nav="1" href="#" class="anchor business blog-active pb-3 md:px-3 lg:px-5 mr-1 md:mr-2">Businesses</a></li>
+          <li><a data-nav="2" href="#" class="anchor fleet pb-3 md:px-3 lg:px-5 md:mx-2">Fleet Owners</a></li>
+          <li><a data-nav="3" href="#" class="anchor driver pb-3 md:px-3 lg:px-5 md:mx-2">Drivers</a></li>
+          <li><a data-nav="4" href="#" class="anchor indiv pb-3 md:px-3 lg:px-5 md:mx-2">Individuals</a></li>
+        </ul>
+        <div class="blog-desc relative w-11/12 mx-auto md:w-full">
+          <div id="business" class="business flex flex-col justify-between pt-20 md:pt-40">
+            <div class="flex flex-col md:flex-row justify-start">
+              <div class="flex flex-col md:w-5/12">
+                <div class="blog-pfp bg-bm-yel bg-opacity-30 flex items-center justify-center"><img src="./assets/img/briefcase.svg" alt="briefcase"></div>
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head lg:leading-snug w-7/12 big:w-1/2">Bowmenn For Businesses</h2>
+                <p class="font-semibold text-lg md:text-xl text-bm-text w-5/6 md:w-3/4 big:w-2/3">Book and manage shipments across your entire supply chain.</p>
+              </div>
+              <div class="mt-8 md:w-1/2 big:w-5/12">
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head">How To Get Started</h2>
+                <div class="steps">
+                  <div class="first flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num num-line bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">01</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head text-xl big:pr-14 font-bold">Download App on Play Store/ APP Store OR Go to Website.</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Create your account within 3 minutes or Request a free estimate on the website</p>
+                    </div>
+                  </div>
+                  <div class="second flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">02</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Request For A Delivery Truck/Van</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">We have thousands of vetted trucks and van owners ready to deliver</p>
+                    </div>
+                  </div>
+                  <div class="third flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">03</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Extra Notes</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Add receivers information or any information useful to the driver</p>
+                    </div>
+                  </div>
+                  <div class="fourth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">04</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">On Demand or Scheduled</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Choose the date and time you need your delivery professional for Pickup
+                      </p>
+                    </div>
+                  </div>
+                  <div class="fifth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">05</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Sit Back And Relax</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">A vetted delivery professional will notify you when they arrive at Pick-up location</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="fleet" class="fleet flex-col justify-between pt-20 md:pt-40">
+            <div class="flex flex-col md:flex-row justify-start">
+              <div class="flex flex-col md:w-5/12">
+                <div class="blog-pfp bg-bm-yel bg-opacity-30 flex items-center justify-center"><img src="./assets/img/truck-moving.svg" alt="moving truck"></div>
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head lg:leading-snug w-7/12 big:w-1/2">Bowmenn For Fleet Owners</h2>
+                <p class="font-semibold text-lg md:text-xl text-bm-text w-5/6 md:w-3/4 big:w-2/3">Developed by Truck Owners for Truck Owners.</p>
+              </div>
+              <div class="mt-8 md:w-1/2 big:w-5/12">
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head">How It Works</h2>
+                <div class="steps">
+                  <div class="first flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num num-line bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">01</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head text-xl big:pr-14 font-bold">Get a New Load Alert</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Get an alert whenever a load is available</p>
+                    </div>
+                  </div>
+                  <div class="second flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">02</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Accept Deliveries That You Want</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Accept loads when available and interested with your App</p>
+                    </div>
+                  </div>
+                  <div class="third flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">03</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Assign Drivers</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Assign already vetted drivers to get the work done</p>
+                    </div>
+                  </div>
+                  <div class="fourth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">04</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Start The Trip</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Arrive at the pickup location at the scheduled time, load the goods and deliver the goods for the customer.</p>
+                    </div>
+                  </div>
+                  <div class="fifth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">05</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Get Paid</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Get paid in less than 5 days</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="driver" class="driver flex-col justify-between pt-20 md:pt-40">
+            <div class="flex flex-col md:flex-row justify-start">
+              <div class="flex flex-col md:w-5/12">
+                <div class="blog-pfp bg-bm-yel bg-opacity-30 flex items-center justify-center"><img src="./assets/img/car-alt.svg" alt="car"></div>
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head lg:leading-snug w-7/12 big:w-1/2">Bowmenn For Drivers</h2>
+                <p class="font-semibold text-lg md:text-xl text-bm-text w-5/6 md:w-3/4 big:w-2/3">EARN MORE MONEY FASTER as a driver</p>
+              </div>
+              <div class="mt-8 md:w-1/2 big:w-5/12">
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head">How it Works</h2>
+                <div class="steps">
+                  <div class="first flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num num-line bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">01</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head text-xl big:pr-14 font-bold">Get a New Load Alert</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Get an alert whenever a load is available</p>
+                    </div>
+                  </div>
+                  <div class="second flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">02</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Accept Deliveries That You Want</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Accept loads when available and interested all in the App</p>
+                    </div>
+                  </div>
+                  <div class="third flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">03</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Start the Job</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Arrive at the pickup location at the scheduled time, load the goods and deliver the goods for the customer.</p>
+                    </div>
+                  </div>
+                  <div class="fourth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">04</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Assign Driver Instantly</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Assign available drivers to the trip to get the work done.</p>
+                    </div>
+                  </div>
+                  <div class="fifth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">05</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Get Paid</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Get paid in less than 5 days</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="indiv" class="indiv flex-col justify-between pt-20 md:pt-40">
+            <div class="flex flex-col md:flex-row justify-start">
+              <div class="flex flex-col md:w-5/12">
+                <div class="blog-pfp bg-bm-yel bg-opacity-30 flex items-center justify-center"><img src="./assets/img/user.svg" alt="individual"></div>
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head lg:leading-snug w-7/12 big:w-1/2">Bowmenn For Individuals</h2>
+                <p class="font-semibold text-lg md:text-xl text-bm-text w-5/6 md:w-3/4 big:w-2/3">Did you just buy something new from a retail store or moving your old household equipment to a new location?</p>
+              </div>
+              <div class="mt-8 md:w-1/2 big:w-5/12">
+                <h2 class="font-bold mb-3 mt-6 text-2xl lg:text-3xl text-bm-head">How To Get Started</h2>
+                <div class="steps">
+                  <div class="first flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num num-line bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">01</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head text-xl big:pr-14 font-bold">Download App on Play Store/ APP Store OR Go to Website.</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Create your account within 3 minutes or Request a free estimate on the website</p>
+                    </div>
+                  </div>
+                  <div class="second flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">02</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Choose Your Preferred Truck</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">We have different registered truck/moving vans ready to assist you.</p>
+                    </div>
+                  </div>
+                  <div class="third flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">03</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Select if You Require Loaders</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Choose if you will require loaders to assist you with load, All in the App.</p>
+                    </div>
+                  </div>
+                  <div class="fourth flex items-start mt-12">
+                    <div class="number w-1/6">
+                      <p class="num bg-bm-btn text-bm-yel flex relative items-center justify-center rounded-full text-2xl font-bold">04</p>
+                    </div>
+                    <div class="step text-left ml-5">
+                      <h3 class="text-bm-head capitalize text-xl font-bold">Get Moving</h3>
+                      <p class="text-lg text-bm-text font-semibold mt-4">Assign available drivers to the trip to get the work done.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="font-semibold text-bm-text sm:text-center md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-7/12 lg:w-1/2 px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
+      <div class="download flex flex-col sm:flex-row items-center justify-center mt-8 text-white">
+        <button class="bg-bm-btn flex text-left items-center justify-between px-11 mb-3 sm:mb-0 md:px-8 lg:px-12 py-4 md:py-5 sm:mr-2">
+          <img src="./assets/img/g58.svg" alt="Apple logo">
+          <div class="location ml-4 flex flex-col">
+            <p class="uppercase font-semibold text-xs mb-1">get it on</p>
+            <p class="font-bold  text-bm-yellow leading-none text-base">Google Play</p>
+          </div>
+        </button>
+        <button class="bg-bm-btn flex text-left items-center justify-between px-7 md:px-8 lg:px-12 py-4 md:py-5 sm:ml-2">
+          <img src="./assets/img/logo-apple.svg" alt="Apple logo">
+          <div class="location ml-4 flex flex-col">
+            <p class="uppercase font-semibold mb-1 text-xs">Download on the</p>
+            <p class="font-bold text-bm-yellow leading-none text-base">App Store</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="w-full flex flex-col items-start relative pt-12 py-20">
+    <div class="flex flex-col items-end w-full relative">
+      <div class=" hidden flex-col-reverse items-center relative lg:flex-row w-full md:w-11/12 mx-auto">
+        <img class="sm:w-2/3" src="./assets/img/Group 168.svg" alt="illustration">
+        <div class="why lg:absolute flex flex-col md:top-60 md:right-0 text-left md:sm:text-center lg:text-left w-full px-4 lg:px-0 md:w-3/4 lg:w-5/12">
+          <h2 class="font-bold text-bm-head text-3xl md:text-4xl md:leading-tight big:leading-tight big:text-5xl">Simplify your business delivery workflow</h2>
+          <p class="font-semibold text-bm-text lg:text-2xl sm:leading-tight my-6 big:pr-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center w-full justify-center md:w-11/12">
+        <div class="why flex flex-col text-left md:sm:text-center lg:text-left px-4 md:px-0 md:w-3/4 lg:w-7/12 lg:pr-10 big:pr-10 big:w-1/2">
+          <h2 class="font-bold text-bm-head text-3xl md:text-4xl w-full md:leading-tight big:leading-tight lg:w-3/4 big:w-5/6 big:text-5xl">Get into the front seat & get paid. It’s that easy</h2>
+          <p class=" text-bm-text lg:w-3/4 big:w-5/6 text-xl md:text-2xl sm:leading-tight my-6">The fastest tech-enabled platform to find and book loads in the world be your own boss, get preferred, quality loads, quick pay, and much more.</p>
+        </div>
+        <div class="why-bg bg-bm-bg rounded-l-4xl">
+          <img src="./assets/img/guy-driver.png" alt="male driver">
+        </div>
+      </div>
+      <p class=" text-bm-text sm:text-center text-lg md:text-2xl sm:leading-tight mt-14 mb-8 mx-auto w-full md:w-7/12 lg:w-1/2 px-4 big:px-20">Earn more money driving with Bowmenn and find more loads in your preferred routes, Drive when you want.</p>
+      <a class="font-bold border-b min-w-min mx-auto border-bm-pri text-bm-pri text-xl" href="for_business.html">Become A Bowmenn Driver</a>
+    </div>
+  </section>
+  <section class="w-full hidden md:flex flex-col items-start pt-10 pb-12 md:pb-0 md:pt-20">
+    <h2 class="font-bold text-bm-head text-3xl md:text-4xl w-full text-center md:leading-tight big:leading-tight big:text-5xl">Testimonials</h2>
+    <div class="flex flex-col w-full md:w-3/4 lg:w-7/12 big:w-1/2 ml-44 big:ml-60">
+      <div class="img-show text-bm-hero relative">
+        <img src="./assets/img/phone-hand.png" alt="phone hand">
+        <div class="phone-card absolute right-0 lg:-right-28 top-32 bg-white flex flex-col min-w-max text-left px-5 pb-5 pt-4">
+          <div class="phone-desc flex items-center">
+            <div class="desc-pfp"><img src="./assets/img/Rectangle_23-4.png" alt="user 2 profile picture"></div>
+            <div class="desc-desc flex flex-col">
+              <p class="font-bold leading-none text-lg text-left">Sam Ayorka</p>
+              <div class="text-base font-semibold text-bm-text">Director, Innter</div>
+            </div>
+          </div>
+          <p class="font-semibold text-sm mt-2">They are really fast</p>
+        </div>
+        <div class="phone-card hidden lg:flex absolute -right-60 bottom-40 bg-white flex-col min-w-max text-left px-5 pb-5 pt-4">
+          <div class="phone-desc flex items-center">
+            <div class="desc-pfp"><img src="./assets/img/Rectangle_23.png" alt="user 3 profile picture"></div>
+            <div class="desc-desc flex flex-col">
+              <p class="font-bold leading-none text-lg text-left">Ivan James</p>
+              <div class="text-base font-semibold text-bm-text">Director, Innter</div>
+            </div>
+          </div>
+          <p class="font-semibold text-sm mt-2">My property came in one piece</p>
+        </div>
+        <div class="phone-card absolute -bottom-12 -right-12 bg-white flex flex-col min-w-max text-left px-5 pb-5 pt-4">
+          <div class="phone-desc flex items-center">
+            <div class="desc-pfp"><img src="./assets/img/Rectangle_23-1.png" alt="user 4 profile picture"></div>
+            <div class="desc-desc flex flex-col">
+              <p class="font-bold leading-none text-lg text-left">Joanna Kevin</p>
+              <div class="text-base font-semibold text-bm-text">Director, Innter</div>
+            </div>
+          </div>
+          <p class="font-semibold text-sm mt-2">It’s either Bowmenn or no one else</p>
+        </div>
+        <div class="phone-card absolute bottom-20 left-2 bg-white hidden lg:flex flex-col min-w-max text-left px-5 pb-5 pt-4">
+          <div class="phone-desc flex items-center">
+            <div class="desc-pfp"><img src="./assets/img/Rectangle_23-2.png" alt="user 5 profile picture"></div>
+            <div class="desc-desc flex flex-col">
+              <p class="font-bold leading-none text-lg text-left">Rahimat Oyamine</p>
+              <div class="text-base font-semibold text-bm-text">Director, Innter</div>
+            </div>
+          </div>
+          <p class="font-semibold text-sm mt-2">From oversea to Abuja sharp sharp</p>
+        </div>
+        <div class="phone-card absolute top-52 left-4 bg-white flex flex-col min-w-max text-left px-5 pb-5 pt-4">
+          <div class="phone-desc flex items-center">
+            <div class="desc-pfp"><img src="./assets/img/Rectangle_23-3.png" alt="user 6 profile picture"></div>
+            <div class="desc-desc flex flex-col">
+              <p class="font-bold leading-none text-lg text-left">Alhaji Haruna Aliyu</p>
+              <div class="text-base font-semibold text-bm-text">MD, <span class="text-bm-head font-bold italic">DanAliyu & Sons</span></div>
+            </div>
+          </div>
+          <p class="font-semibold text-sm mt-2">I wasn’t sure at first but now… I’m in love</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full flex flex-col items-start relative pt-12 py-20">
+    <div class="flex flex-col items-end w-full relative">
+      <div class="flex flex-col items-center md:mt-40 mx-auto w-full md:w-11/12">
+        <h2 class="font-bold text-bm-head text-3xl md:text-4xl sm:text-center px-4 md:px-0 md:w-3/4 lg:w-5/12 big:w-1/2 big:leading-tight big:text-5xl">We Help you stay Connected & get your Delivery moving</h2>
+        <p class="text-bm-text sm:text-center text-lg md:text-2xl sm:leading-tight mt-6 mx-auto md:w-3/4 px-4 lg:px-20 big:w-7/12 big:px-6 ">Bowmenn pros will load and secure your goods to the final destination. You just tell them where and when you want them to deliver.</p>
+        <div class="connect md:mx-0 mt-16 rounded-2xl md:rounded-4xl w-full md:w-3/4"><img class="rounded-2xl md:rounded-4xl w-full" src="./assets/img/bow.png" alt="bow"></div>
+      </div>
+    </div>
+    <div class="about-card absolute -bottom-40 md:-bottom-28 px-4 md:px-14 py-8 md:py-12 bg-white rounded-4xl w-11/12 md:w-5/6">
+      <h3 class="font-bold text-bm-head">About Us</h3>
+      <div class="about-desc flex flex-col lg:flex-row justify-between items-center">
+        <p class="text-bm-text text-left text-xl md:text-2xl sm:leading-tight mt-6 lg:w-2/3">Bowmenn is a tech-enabled last-mile logistics platform that connects truck owners with businesses and individuals to provide on-demand delivery of goods and household equipment conveniently from the shortest distance to the last - mile.</p>
+        <a class="font-bold mt-3 md:mt-0 md:pr-14 text-bm-pri text-xl md:text-2xl" href="#">Learn more</a>
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="faq bg-bm-bg w-full flex flex-col pt-60">
+    <div class="faq-card bg-white py-16 flex flex-col md:items-center mx-auto px-4 md:px-0 rounded-2xl md:rounded-5xl w-full md:w-5/6">
+      <h2 class="font-bold text-bm-head text-3xl md:text-4xl sm:text-center big:text-4xl">Frequently Asked Questions</h2>
+      <p class="text-bm-text sm:text-center text-xl sm:leading-tight mt-5">We love your questions! Because we have answers to them</p>
+      <div class="questions flex flex-col w-full px-4 md:px-0 md:w-3/4 big:w-7/12">
+        <div class="what border-b py-10 flex flex-col mt-12 w-full">
+          <div class="what-head flex text-bm-head items-center justify-between">
+            <h3 class="font-bold cursor-pointer text-xl sm:text-2xl md:text-3xl w-5/6 md:w-full">What is Bowmenn?</h3>
+            <div class="toggler relative flex items-center justify-center w-10 h-10 text-4xl rounded-lg"><span class="minus">&#8722;</span><span class="plus">&#x2B;</span></div>
+          </div>
+          <p class="what-answer none font-semibold text-bm-text text-lg md:text-xl sm:leading-tight mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo</p>
+        </div>
+        <div class="what border-b py-10 flex flex-col w-full">
+          <div class="what-head flex text-bm-head items-center justify-between">
+            <h3 class="font-bold cursor-pointer text-xl sm:text-2xl md:text-3xl w-5/6 md:w-full">How do I request for a drive?</h3>
+            <div class="toggler relative flex items-center justify-center w-10 h-10 text-4xl rounded-lg"><span class="minus">&#8722;</span><span class="plus">&#x2B;</span></div>
+          </div>
+          <p class="what-answer none font-semibold text-bm-text text-lg md:text-xl sm:leading-tight mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo</p>
+        </div>
+        <div class="what border-b py-10 flex flex-col w-full">
+          <div class="what-head flex text-bm-head items-center justify-between">
+            <h3 class="font-bold cursor-pointer text-xl sm:text-2xl md:text-3xl w-5/6 md:w-full">Do you guys ship items to other countries?</h3>
+            <div class="toggler relative flex items-center justify-center w-10 h-10 text-4xl rounded-lg"><span class="minus">&#8722;</span><span class="plus">&#x2B;</span></div>
+          </div>
+          <p class="what-answer none font-semibold text-bm-text text-lg md:text-xl sm:leading-tight mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo</p>
+        </div>
+        <div class="what border-b py-10 flex flex-col w-full">
+          <div class="what-head flex text-bm-head items-center justify-between">
+            <h3 class="font-bold cursor-pointer text-xl sm:text-2xl md:text-3xl w-5/6 md:w-full">How many Payment options there is?</h3>
+            <div class="toggler relative flex items-center justify-center w-10 h-10 text-4xl rounded-lg"><span class="minus">&#8722;</span><span class="plus">&#x2B;</span></div>
+          </div>
+          <p class="what-answer none font-semibold text-bm-text text-lg md:text-xl sm:leading-tight mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo</p>
+        </div>
+        <div class="what border-b py-10 flex flex-col w-full">
+          <div class="what-head flex text-bm-head items-center justify-between">
+            <h3 class="font-bold cursor-pointer text-xl sm:text-2xl md:text-3xl w-5/6 md:w-full">How long does it take to move a truck load to a 5km location?</h3>
+            <div class="toggler relative flex items-center justify-center w-10 h-10 text-4xl rounded-lg"><span class="minus">&#8722;</span><span class="plus">&#x2B;</span></div>
+          </div>
+          <p class="what-answer none font-semibold text-bm-text text-lg md:text-xl sm:leading-tight mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae ultricies leo</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white w-full mt-32 pb-20">
+      <h2 class="font-bold px-4 md:px-0 text-bm-head mt-20 text-3xl md:text-4xl sm:text-center big:leading-tight big:text-5xl">Get Bowmenn Now</h2>
+      <p class="text-bm-text sm:text-center text-lg leading-normal md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-7/12 lg:w-1/2 px-4 big:px-20">Bowmenn helps fleet owners just like you to find loads, meet demands and grow faster.</p>
+      <div class="download flex flex-col sm:flex-row items-center justify-center mt-8 text-white">
+        <button class="bg-bm-btn flex text-left items-center justify-between px-11 mb-3 sm:mb-0 md:px-8 lg:px-12 py-4 md:py-5 sm:mr-2">
+          <img src="./assets/img/g58.svg" alt="Apple logo">
+          <div class="location ml-4 flex flex-col">
+            <p class="uppercase font-semibold text-xs mb-1">get it on</p>
+            <p class="font-bold  text-bm-yellow leading-none text-base">Google Play</p>
+          </div>
+        </button>
+        <button class="bg-bm-btn flex text-left items-center justify-between px-7 md:px-8 lg:px-12 py-4 md:py-5 sm:ml-2">
+          <img src="./assets/img/logo-apple.svg" alt="Apple logo">
+          <div class="location ml-4 flex flex-col">
+            <p class="uppercase font-semibold mb-1 text-xs">Download on the</p>
+            <p class="font-bold text-bm-yellow leading-none text-base">App Store</p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="pt-6 bg-white lg:pt-24 text-bm-textbg-bm-bg">  
+    <div class="w-full md:w-5/6 mx-auto pb-12 sm:pb-16 lg:pb-10">
+     <div class="flex flex-col mt-6 md:mt-0 lg:w-full lg:mx-auto">
+      <div class="footer-top flex flex-col w-full sm:flex-row sm:justify-between sm:flex-wrap">
+        <div class="px-4 md:px-0 sm:w-1/2 lg:w-2/5">
+          <img src="./assets/img/Bowmenn_Logo.png" alt="Bowmenn Logo">
+          <p class="font-semibold text-bm-text text-xl sm:leading-tight mt-7 w-3/4 big:pr-12">Bowmenn Makes businesses move faster for shippers, drivers, and truck owners.</p>
+        </div>
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+          <h5 class="text-bm-head font-bold text-3xl">App</h5>  
+          <ul class="pt-5 text-xl lg:text-2xl"> 
+            <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">Why Bowmenn</a></li>  
+            <li> <a href="#" class="mb-2 font-semibold text-bm-head text-xl">Download Now</a></li>
+          </ul>
+        </div> 
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+          <h5 class="text-bm-head font-bold text-3xl">Company</h5> 
+          <ul class="pt-5 text-xl lg:text-2xl"> 
+            <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">About</a></li> 
+            <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">For Who?</a></li> 
+            </ul>
+        </div>
+        <div class="px-4 md:px-0 lg:px-4 mt-8 lg:mt-0 sm:w-1/2 lg:w-1/5">
+          <h5 class="text-bm-head font-bold text-3xl">Support</h5> 
+          <ul class="pt-5 text-xl lg:text-2xl"> 
+            <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">FAQ</a></li> 
+            <li> <a href="#" class="mb-2 font-semibold text-bm-text text-xl">Contact</a></li> 
+            </ul>
+        </div>
+      </div>
+      <div class="footer-mid mt-10 px-4 md:px-0 flex flex-col text-bm-btn w-full lg:flex-row lg:justify-between lg:flex-wrap">
+        <p class="text-xl font-semibold">&copy;2021 Bowmenn</p>
+        <p class="text-xl mt-3 md:mt-3 font-semibold">Support.24/7@bowmenn.com</p>
+        <div class="socials flex mt-4 lg:mt-0 items-center">
+          <a class="mr-4" href="#"><img src="./assets/img/svgexport-10.svg" alt="Instagram Social"></a>
+          <a class="mr-4" href="#"><img src="./assets/img/svgexport-11.svg" alt="Facebook Social"></a>
+          <a class="mr-32" href="#"><img src="./assets/img/twitter-alt.svg" alt="Twitter Social"></a>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="w-full bg-white py-6 px-4 lg:px-0">
+      <p class="container text-bm-head font-semibold mx-auto text-center text-lg md:text-xl w-full lg:w-11/12 xl:w-full">Privacy Policy<span class="ml-8">Terms and Conditions</span></p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
