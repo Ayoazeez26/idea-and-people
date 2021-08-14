@@ -170,6 +170,12 @@ html {
   border: 11px solid #EDEBE4;
   height: 513px;
 }
+.slider {
+  width: 10px;
+  background-color: #E5E5E5;
+  /* height: 100%; */
+  /* border: 7px solid #E5E5E5; */
+}
 /* ABOUT PAGE */
 
 .about-bg {
