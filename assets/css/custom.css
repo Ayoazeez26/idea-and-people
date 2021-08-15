@@ -229,8 +229,31 @@ html {
   top: 80px;
   left: 12px;
   width: 1px;
-  height: 480px;
-  background-color: #71A1FA;
+  height: 440px;
+  background-color: #6AD011;
+}
+@media screen and (min-width: 1320px) {
+  .greq-head::after {
+    top: 100px;
+    height: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .greq-head::after {
+    top: 70px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .greq-head::after {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .greq-head::after {
+    top: 70px;
+    height: 440px;
+  }
 }
 .create-btn {
   box-shadow: -40px 43px 86px #26314021;
