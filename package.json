@@ -4,14 +4,23 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build": "postcss assets/css/index.css -o assets/css/tailwind.css"
+    "dev": "tailwindcss build -i ./assets/css/index.css -o ./assets/css/tailwind.css",
+    "build": "NODE_ENV=production npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayoazeez26/bowmenn.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+  "bugs": {
+    "url": "https://github.com/Ayoazeez26/bowmenn/issues"
+  },
+  "homepage": "https://github.com/Ayoazeez26/bowmenn#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "tailwindcss": "^2.2.7"
   }
 }

@@ -18,7 +18,8 @@ module.exports = {
           fleet: "#71A1FA",
           dri: "#6AD011",
           vet: "#F8FAFA",
-          vbtn: "#DB9033"
+          vbtn: "#DB9033",
+          contact: "#243141"
         },
       },
       screens: {

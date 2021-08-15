@@ -12,18 +12,40 @@
   <title>Bowmenn</title>
 </head>
 <body>
-  <header class="sticky bg-opacity-90 bg-bm-bg flex items-center top-0 left-0 z-50 h-16 text-bm-text text-lg lg:h-24 w-full">
-    <div class="flex items-center justify-between w-11/12 md:w-5/6 mx-auto">
+  <header class="sticky bg-opacity-90 bg-white flex items-center top-0 left-0 z-50 h-16 text-bm-text text-lg lg:h-28 w-full">
+    <div class="flex items-center justify-between w-11/12 big:w-5/6 mx-auto">
       <a href="index.html"><img src="./assets/img/Bowmenn_Logo.png" alt="Bowmenn Logo"></a>
-      <ul class="nav-tabs nav-text font-semibold hidden lg:flex items-center text-xl justify-between">
-        <a href="index.html#why" class="mr-10">Why Bowmenn</a>
-        <a href="index.html#what" class="mr-10">For Businesses</a>
-        <a href="index.html#faq" class="mr-10">FAQ</a>
+      <ul class="nav-tabs nav-text font-semibold hidden lg:flex items-center justify-between">
+        <li><a href="index.html#why" class="mr-10">Why Bowmenn</a></li>
+        
+        <li class=" border-transparent mr-10 relative list-none">
+          <a href="#" class="who-dropdown flex items-center">
+            <span class="mr-2">For You</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="7.94" viewBox="0 0 15.21 9.295">
+              <path id="Path_26" data-name="Path 26"
+                d="M13.241,14.137l5.915-5.915,1.69,1.69-7.6,7.605-7.6-7.605,1.69-1.69Z"
+                transform="translate(-5.636 -8.222)" fill="#343434" />
+            </svg>
+          </a>
+          <ul
+            class="dropdown-menu absolute text-bm-text bottom-0 top-8 w-48 h-44 border flex-col z-60 bg-white hidden">
+            <a href="bowmenn-business.html"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Businesses</a>
+            <a href="bowmenn-fleet.html"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Fleet Owners</a>
+            <a href="bowmenn-driver.html"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2 border-b">For Drivers</a>
+            <a href="bowmenn-individual.html"
+              class="hover:text-bm-pri hover:bg-gray-200 px-5 drop-item py-2">For Individual</a>
+          </ul>
+        </li>
+        <a href="#faq" class="mr-10">FAQ</a>
         <a href="about.html" class="mr-10">About</a>
-        <a href="contact.html" class="text-bm-head">Contact</a>
+        <a href="contact.html" class="">Contact</a>
       </ul>
       <div class="nav-links items-center justify-between flex">
-        <a href="#" class="font-black hidden lg:block text-bm-hero text-xl">Download App</a>
+        <a href="#" class="font-bold hidden mr-9 lg:block text-bm-hero text-xl">Sign In</a>
+        <a href="#" class="createAcc create-btn font-bold text-center bg-bm-bus px-4 py-3 rounded-xl hidden lg:block text-white text-xl">Create Account</a>
         <div class="hamburger lg:hidden sm-menu-btn relative z-50 justify-self-end ml-20 flex flex-col">
           <span class="ham-up inline-flex w-5 h-1 bg-bm-btn"></span>
           <span class="ham-down inline-flex w-5 h-1 bg-bm-btn mt-1"></span> 
@@ -40,10 +62,13 @@
           <div class="text-white pt-20 flex justify-center md:justify-end font-semibold p-5 mt-10 w-full">
             <div class="flex flex-col w-full">
               <a href="index.html#why" class="text-2xl md:text-3xl mb-3 p-2">Why Bowmenn</a> 
-              <a href="index.html#what" class="text-2xl md:text-3xl mb-3 p-2">For Businesses</a>
-              <a href="index.html#faq" class="text-2xl md:text-3xl mb-3 p-2">FAQ</a>
+              <a href="bowmenn-business.html" class="text-2xl md:text-3xl mb-3 p-2">For Businesses</a>
+              <a href="bowmenn-fleet.html" class="text-2xl md:text-3xl mb-3 p-2">For Fleet Owners</a>
+              <a href="bowmenn-driver.html" class="text-2xl md:text-3xl mb-3 p-2">For Drivers</a>
+              <a href="bowmenn-individual.html" class="text-2xl md:text-3xl mb-3 p-2">For Individual</a>
+              <a href="#faq" class="text-2xl md:text-3xl mb-3 p-2">FAQ</a>
               <a href="about.html" class="text-2xl md:text-3xl mb-3 p-2">About</a>
-              <a href="contact.html" class="text-2xl md:text-pr-sec text-2xl md:text-3xl mb-3 p-2">Contact</a>
+              <a href="contact.html" class="text-pr-sec text-2xl md:text-3xl mb-3 p-2">Contact</a>
             </div>
           </div>
         </div>
@@ -55,8 +80,8 @@
   <section class="bg-white w-full flex flex-col items-center pt-10 pb-12 md:pb-0 md:pt-20">
     <div class="flex flex-col px-4 sm:px-0 w-full md:w-7/12 mx-auto">
       <p class="text-lg uppercase sm:text-center text-bm-yel font-semibold">bowmenn</p>
-      <h1 class="font-extrabold text-bm-hero sm:text-center text-4xl lg:text-6xl sm:leading-tight big:text-8xl big:leading-tight">Contact Us.</h1>
-      <p class="font-semibold text-bm-text sm:text-center md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-2/3 sm:px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
+      <h1 class="font-bold text-bm-contact sm:text-center text-4xl lg:text-6xl sm:leading-tight xl:text-7xl big:text-8xl big:leading-tight">Contact Us.</h1>
+      <p class="text-bm-text sm:text-center md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-2/3 sm:px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
     </div>
     <div class="flex flex-col md:flex-row justify-between items-start mt-12 md:mt-28 px-4 md:px-0 w-full md:w-7/12">
       <div class="flex flex-col md:w-2/5 justify-between mb-10">
@@ -71,7 +96,7 @@
   </section>
 
   <section class="bg-white w-full flex flex-col pt-12 md:pt-32 pb-28">
-    <h2 class="font-extrabold text-bm-head px-4 sm:px-0 mt-10 md:mt-20 text-3xl sm:text-4xl sm:text-center big:leading-tight big:text-5xl">Get Bowmenn Now</h2>
+    <h2 class="font-bold text-bm-head px-4 sm:px-0 mt-10 md:mt-20 text-3xl sm:text-4xl sm:text-center big:leading-tight big:text-5xl">Get Bowmenn Now</h2>
     <p class="font-semibold text-bm-text sm:text-center md:text-2xl sm:leading-tight mt-6 mx-auto w-full md:w-2/5 px-4 big:px-10">Bowmenn makes businesses move faster for shippers, drivers, and truck owners.</p>
     <div class="download flex flex-col sm:flex-row items-center justify-center mt-8 text-white">
       <button class="bg-bm-btn flex text-left items-center justify-between px-11 mb-3 sm:mb-0 md:px-8 lg:px-12 py-4 md:py-5 sm:mr-2">

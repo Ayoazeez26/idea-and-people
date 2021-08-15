@@ -176,6 +176,72 @@ html {
   /* height: 100%; */
   /* border: 7px solid #E5E5E5; */
 }
+
+/* BOWMENN FOR FLEET OWNERS */
+.fleet-bg {
+  background-image: url(../../assets/img/blue-overlay-bg.svg),
+    url(../../assets/img/trucks-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.req-head::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 12px;
+  width: 1px;
+  height: 440px;
+  background-color: #71A1FA;
+}
+@media screen and (min-width: 1320px) {
+  .req-head::after {
+    top: 100px;
+    height: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .req-head::after {
+    top: 70px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .req-head::after {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .req-head::after {
+    top: 70px;
+    height: 440px;
+  }
+}
+/* BOWMENN FOR DRIVERS*/
+.drive-bg {
+  background-image: url(../../assets/img/green-overlay.svg),
+    url(../../assets/img/smiling-senior-afro-man-driving-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.greq-head::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 12px;
+  width: 1px;
+  height: 480px;
+  background-color: #71A1FA;
+}
+.create-btn {
+  box-shadow: -40px 43px 86px #26314021;
+}
+/* BOWMENN FOR INDIVIDUALS*/
+.indiv-bg {
+  background-image: url(../../assets/img/indiv-bg.svg),
+    url(../../assets/img/black-man-smiling-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* ABOUT PAGE */
 
 .about-bg {
