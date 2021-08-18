@@ -2,6 +2,9 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
 }
+.foot {
+  font-family: 'Nunito', sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -184,37 +187,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.req-head::after {
+.require-list::after {
   content: "";
   position: absolute;
-  top: 80px;
+  bottom: 0;
   left: 12px;
   width: 1px;
-  height: 440px;
+  height: 98%;
   background-color: #71A1FA;
-}
-@media screen and (min-width: 1320px) {
-  .req-head::after {
-    top: 100px;
-    height: 440px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .req-head::after {
-    top: 70px;
-    height: 340px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .req-head::after {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .req-head::after {
-    top: 70px;
-    height: 440px;
-  }
 }
 /* BOWMENN FOR DRIVERS*/
 .drive-bg {
@@ -223,37 +203,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.greq-head::after {
+.requireg-list::after {
   content: "";
   position: absolute;
-  top: 80px;
+  bottom: 0;
   left: 12px;
   width: 1px;
-  height: 440px;
+  height: 98%;
   background-color: #6AD011;
-}
-@media screen and (min-width: 1320px) {
-  .greq-head::after {
-    top: 100px;
-    height: 440px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .greq-head::after {
-    top: 70px;
-    height: 340px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .greq-head::after {
-    height: 500px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .greq-head::after {
-    top: 70px;
-    height: 440px;
-  }
 }
 .create-btn {
   box-shadow: -40px 43px 86px #26314021;
