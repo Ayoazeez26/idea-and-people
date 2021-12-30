@@ -8,21 +8,6 @@ smMenuBtn.forEach(eventName => {
   })
 })
 
-const who = document.querySelector('.who-dropdown');
-if (who) {
-  const dropdown = document.querySelector('.dropdown-menu');
-  who.addEventListener('mouseenter', () => {
-    if (dropdown.classList.contains('hidden')) {
-      dropdown.classList.replace('hidden', 'flex');
-    }
-  })
-  dropdown.addEventListener('mouseleave', () => {
-    if (dropdown.classList.contains('flex')) {
-      dropdown.classList.replace('flex', 'hidden');
-    }
-  })
-}
-
 
 const blogDesc = document.querySelector('.blog-desc');
 if (blogDesc) {
